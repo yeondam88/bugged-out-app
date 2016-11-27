@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var bug_module_1 = require('./bugs/bug.module');
-var shared_module_1 = require('./shared/shared.module');
+var app_routing_module_1 = require('./app-routing.module');
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {
@@ -21,7 +21,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 bug_module_1.BugModule,
-                shared_module_1.SharedModule
+                app_routing_module_1.AppRoutingModule
             ],
             declarations: [app_component_1.AppComponent],
             providers: [],

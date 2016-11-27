@@ -9,25 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var shared_module_1 = require('../shared/shared.module');
-var bug_list_component_1 = require('./bug-list/bug-list.component');
-var BugModule = (function () {
-    function BugModule() {
+var router_1 = require('@angular/router');
+var bug_list_component_1 = require('./bugs/bug-list/bug-list.component');
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    BugModule = __decorate([
+    AppRoutingModule = __decorate([
         core_1.NgModule({
             imports: [
-                shared_module_1.SharedModule
+                router_1.RouterModule.forRoot([
+                    {
+                        path: '',
+                        component: bug_list_component_1.BugListComponent
+                    }
+                ])
             ],
-            declarations: [
-                bug_list_component_1.BugListComponent,
-            ],
-            exports: [],
-            providers: []
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], BugModule);
-    return BugModule;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.BugModule = BugModule;
-//# sourceMappingURL=bug.module.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

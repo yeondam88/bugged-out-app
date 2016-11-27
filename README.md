@@ -1,7 +1,7 @@
-# angular2-skeleton-project
+# Angular 2 BUGGED OUT APP
 
 ```
 npm start
 ```
 
-## Angular 2 start-kit project
+

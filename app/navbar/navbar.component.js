@@ -9,20 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AppRoutingModule = (function () {
-    function AppRoutingModule() {
+var NavbarComponent = (function () {
+    function NavbarComponent() {
     }
-    AppRoutingModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                router_1.RouterModule.forRoot([])
-            ],
-            exports: [router_1.RouterModule]
+    NavbarComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'navbar',
+            templateUrl: 'navbar.component.html',
+            styleUrls: ['navbar.component.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], AppRoutingModule);
-    return AppRoutingModule;
+    ], NavbarComponent);
+    return NavbarComponent;
 }());
-exports.AppRoutingModule = AppRoutingModule;
-//# sourceMappingURL=app-routing.module.js.map
+exports.NavbarComponent = NavbarComponent;
+//# sourceMappingURL=navbar.component.js.map

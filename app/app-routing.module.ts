@@ -1,17 +1,13 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
-import { BugListComponent } from './bugs/bug-list/bug-list.component';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            {
-                path: '',
-                component: BugListComponent
-            }
-    ])
+
+        ])
     ],
-    exports: [ RouterModule ]
+    exports: [RouterModule]
 })
-export class AppRoutingModule {  }
+export class AppRoutingModule {
+}
